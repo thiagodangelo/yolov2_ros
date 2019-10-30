@@ -1,0 +1,14 @@
+<launch>
+
+    <group>
+        <node pkg="yolov2_ros" name="yolo_predict" type="yolo_predict.py" output="screen">
+            <param name="camera_id" type="str" value="0" />
+            <param name="image_topic" type="str" value="/videofile/image_raw" />
+            <!--param name="image_topic" type="str" value="/image_pub/image/rgb/" /-->
+            <param name="image_type" type="str" value="rgb" />
+            <param name="get_object_pos" type="bool" value="false" />
+        </node>
+    </group>
+    <include file="$(find yolov2_ros)/launch/includes/yolo_server.launch" />
+
+</launch>
