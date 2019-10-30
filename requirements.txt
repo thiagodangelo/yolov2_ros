@@ -1,7 +1,10 @@
+rospkg
 numpy
 scipy
 scikit-learn
-keras
+Keras==2.1.5
+Keras-Applications==1.0.6
+Keras-Preprocessing==1.0.5
 opencv-python
 h5py
 imgaug
@@ -9,5 +12,6 @@ imgaug
 # TensorFlow can be installed either as CPU or GPU versions.
 # You select which one to install by (un)commenting these lines.
 
-# tensorflow		# CPU Version of TensorFlow.
-tensorflow-gpu	# GPU version of TensorFlow.
+# tensorflow==1.5.0   # CPU Version of TensorFlow.
+tensorflow-gpu==1.5.0	# GPU version of TensorFlow.
+tensorflow-tensorboard==1.5.1
